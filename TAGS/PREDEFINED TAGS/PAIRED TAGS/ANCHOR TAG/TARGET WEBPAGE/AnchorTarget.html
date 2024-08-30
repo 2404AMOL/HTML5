@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main{
+            width: 1000px;
+            height: 650px;
+            border: 1px solid black;
+            margin: 30px 300px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .anchor{
+            width: 450px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+
+        }
+        h1{
+            height: 35px;
+            width: 255px;
+        }
+        a{
+            height: 50px;
+            width: 180px;
+            font-size: 25px;
+
+        }
+        p{
+            font-size: 16px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <!--! Anchor Tag With Target  -->
+    <!--todo target "_blank":-It is used to the open the link in the New Tab  -->
+    <!--todo target "_self":-It is used to the open the link in the same Tab  -->
+
+    <!--* The target"_parent" or target"_top" is used using the iframe -->
+    <!--todo target "_parent":-It is used to the open the link inside the parent frame  -->
+    <!--todo target "_top":-It is used to the open the link in the top main window  -->
+
+
+    <div class="Main">
+
+        <div class="anchor" id="blank">
+            <h1>target"_blank"</h1>
+            <a href="https://www.google.com/" target="_blank">GOOGLE</a>
+        
+            <p>  target "_blank":-It is used to the open the link in the New Tab 
+
+
+            </p>
+        </div>
+        <div class="anchor" id="self">
+            <h1>target"_self"</h1>
+            <a href="https://www.google.com/" target="_self">GOOGLE</a>
+            <p>
+                target "_self":-It is used to the open the link in the same Tab 
+
+            </p>
+
+        </div>
+        <div class="anchor" id="parent">
+            <h1>target"_parent"</h1>
+            
+            <a href="./IMAGES/LUCIFER MORNINGSTAR 2.jpg" target="_parent">GOOGLE</a>
+            <p>
+                target "_self":-It is used to the open the link in the same Tab 
+
+            </p>
+
+        </div>
+        <div class="anchor" id="top">
+
+        </div>
+    </div>
+
+    <a href="https://www.google.com/" target="_self">GOOGLE</a>
+    <a href="https://www.google.com/" target="_parent">GOOGLE</a>
+    <a href="https://www.google.com/" target="_top">GOOGLE</a>
+
+
+
+</body>
+</html>
